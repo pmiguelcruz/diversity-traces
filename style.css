@@ -1,0 +1,134 @@
+body{
+
+    background-color: white;
+    text-align: center;
+    font-family: 'Nunito', serif;
+}
+
+#header{
+    position: relative;
+    width: 1350px;
+    margin: auto;
+    margin-bottom: 200px;
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 300px;
+}
+
+#header h1{
+    font-weight: 900;
+    font-size: 36pt;
+    color: #444;
+
+}
+
+#big-percentage{
+    font-size: 36pt;
+    font-weight: 800;
+    color: #666666;
+    line-height: 1.2em;
+
+}
+
+#big-statistics{
+    font-size: 18pt;
+    font-weight: 200;
+    color: #666666;
+    margin-top: 36pt;
+    line-height: 1.5em;
+}
+
+#big-statistics span{
+    font-weight: 400;
+}
+
+
+#holder{
+    position: relative;
+    width: 1350px;
+    margin: auto;
+   
+
+}
+
+#wrapper{
+    overflow: hidden;
+}
+
+
+
+#lens{
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.50);
+}
+
+#marker{
+    position: absolute;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#marker div{
+    background-color: black;
+    width: 4px;
+    height: 10px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+#footer{
+    height: 500px;
+}
+
+.button-years{
+    background-color: #E6E6E6;
+    color: #999999;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 16pt;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.button-years:hover{
+    color: black;
+}
+
+.button-years.selected{
+    background-color: #4D4D4D;
+    color: #F2F2F2;  
+}
+
+#loading{
+    position: absolute;
+    top: 322px;
+
+    font-weight: 900;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    border-radius: 7px;
+    background-color: #E6E6E6;
+    font-size: 10pt;
+
+    animation-name: loading-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes loading-animation {
+    0%   {background-color: #E6E6E6;; color: #000}
+    100% {background-color: #999999;; color: #000}
+  }

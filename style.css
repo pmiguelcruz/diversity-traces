@@ -1,11 +1,11 @@
-body{
+body {
 
     background-color: white;
     text-align: center;
     font-family: 'Nunito', serif;
 }
 
-#header{
+#header {
     position: relative;
     width: 1350px;
     margin: auto;
@@ -15,14 +15,14 @@ body{
     margin-left: 300px;
 }
 
-#header h1{
+#header h1 {
     font-weight: 900;
     font-size: 36pt;
     color: #444;
 
 }
 
-#big-percentage{
+#big-percentage {
     font-size: 36pt;
     font-weight: 800;
     color: #666666;
@@ -30,7 +30,7 @@ body{
 
 }
 
-#big-statistics{
+#big-statistics {
     font-size: 18pt;
     font-weight: 200;
     color: #666666;
@@ -38,40 +38,40 @@ body{
     line-height: 1.5em;
 }
 
-#big-statistics span{
+#big-statistics span {
     font-weight: 400;
 }
 
 
-#holder{
+#holder {
     position: relative;
     width: 1350px;
     margin: auto;
-   
+
 
 }
 
-#wrapper{
+#wrapper {
     overflow: hidden;
 }
 
 
 
-#lens{
+#lens {
     position: absolute;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.50);
 }
 
-#marker{
+#marker {
     position: absolute;
     text-align: center;
     border: 1px solid gray;
     border-radius: 5px;
 }
 
-#marker div{
+#marker div {
     background-color: black;
     width: 4px;
     height: 10px;
@@ -79,11 +79,11 @@ body{
     margin-top: 5px;
 }
 
-#footer{
+#footer {
     height: 500px;
 }
 
-.button-years{
+.button-years {
     background-color: #E6E6E6;
     color: #999999;
     cursor: pointer;
@@ -97,16 +97,16 @@ body{
     margin-right: 5px;
 }
 
-.button-years:hover{
+.button-years:hover {
     color: black;
 }
 
-.button-years.selected{
+.button-years.selected {
     background-color: #4D4D4D;
-    color: #F2F2F2;  
+    color: #F2F2F2;
 }
 
-#loading{
+#loading {
     position: absolute;
     top: 322px;
 
@@ -129,6 +129,32 @@ body{
 
 
 @keyframes loading-animation {
-    0%   {background-color: #E6E6E6;; color: #000}
-    100% {background-color: #999999;; color: #000}
-  }
+    0% {
+        background-color: #E6E6E6;
+        ;
+        color: #000
+    }
+
+    100% {
+        background-color: #999999;
+        ;
+        color: #000
+    }
+}
+
+
+#races-holder {
+    background-color: yellow;
+    text-align: left;
+    width: 1350px;
+    margin: auto;
+
+}
+
+.race-info {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-right: 10px;
+}

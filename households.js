@@ -71,6 +71,9 @@ function setup() {
     createCanvas(f_width, m_height).parent('base-sketch');
     setYear(YEAR);
     maintenance();
+ 
+    
+
 }
 
 function setYear(y) {
@@ -108,6 +111,8 @@ function setYear(y) {
         select("#meta-num2").html(meta_num2);
         select("#meta-sample").html(meta_sample+"%");
     }
+
+    updateRacesInfo();
 
     
 }
@@ -317,6 +322,39 @@ function yearClick(){
 function keyPressed(){
     if(key == "s") DISPLAY_SERIAL = !DISPLAY_SERIAL;
 }
+
+/* race stats */
+
+function updateRacesInfo(){
+    selectAll(".race-info").forEach( (e) => e.remove());
+    let keys = Object.keys(stats[YEAR]);
+    keys.sort( (a, b) => stats[YEAR][a] - stats[YEAR][b]);
+    let total = metadata.findRow(`${YEAR}`, "YEAR").getNum("N_VIZ");
+    let papi = select("#races-holder");
+    for(let rr of keys){
+        let info = createDiv().parent(papi).class("race-info");
+        let name = unwrap(rr);
+        let no = nfs(stats[YEAR][rr]/total * 100, 1, 2)+"%";
+        info.html(name + "<br/>" + no);
+    }
+    function unwrap([...XX]){
+        return equiv(XX[0]) + "<br/>" + equiv(XX[1]);
+
+        function equiv(X){
+            switch(X){
+                case "W": return "White"
+                case "N": return "Native"
+                case "B": return "Black"
+                case "+": return "Mult."
+                case "A": return "Asian";
+                default: return X;
+            }
+        }
+
+    }
+}
+
+
 
 
 

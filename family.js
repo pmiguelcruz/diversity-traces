@@ -81,7 +81,7 @@ class Family {
       p.textAlign(CENTER);
       p.noStroke();
       p.fill(50);
-      p.text("H", 0, -this.p2.getAge()-0.75);
+      p.text("L", 0, -this.p2.getAge()-0.75);
     }
 
     p.pop();
@@ -105,7 +105,7 @@ class Family {
       p.textAlign(CENTER);
       p.noStroke();
       p.fill(50);
-      p.text("H", 0, -this.p1.getAge()-0.75);
+      p.text("L", 0, -this.p1.getAge()-0.75);
     }
 
     /* HEAD */

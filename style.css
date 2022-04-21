@@ -3,6 +3,7 @@ body {
     background-color: white;
     text-align: center;
     font-family: 'Nunito', serif;
+    overflow-x: hidden;
 }
 
 #header {
@@ -19,15 +20,41 @@ body {
     font-weight: 900;
     font-size: 36pt;
     color: #444;
+}
 
+#main-title{
+    font-size: 32pt;
+    font-weight: 800;
+    color: #666666;
+    margin-bottom: 0;
+}
+
+
+#sub-title{
+    font-size: 18pt;
+    font-weight: 200;
+    color: #666666;
+    margin-top: 0;
+}
+
+#title-years{
+    font-size: 14pt;
+    font-weight: 800;
+    color: #666666;
+}
+
+#legend{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    left: -70px;
 }
 
 #big-percentage {
-    font-size: 36pt;
+    font-size: 24pt;
     font-weight: 800;
     color: #666666;
-    line-height: 1.2em;
-
+    line-height: 1.3em;
 }
 
 #big-statistics {
@@ -131,20 +158,17 @@ body {
 @keyframes loading-animation {
     0% {
         background-color: #E6E6E6;
-        ;
         color: #000
     }
 
     100% {
         background-color: #999999;
-        ;
         color: #000
     }
 }
 
 
 #races-holder {
-    background-color: yellow;
     text-align: left;
     width: 1350px;
     margin: auto;
@@ -152,9 +176,24 @@ body {
 }
 
 .race-info {
-    background-color: red;
+    font-size: 11pt;
     height: 100px;
-    width: 100px;
+    width: 125px;
     display: inline-block;
-    margin-right: 10px;
+    margin-left: 10px;
+    font-weight: 700;
+    color:#444;
+    line-height: 1.3em;
+}
+
+.v-mark{
+  
+    border-radius: 7px;
+    display: inline-block;
+    width: 4px;
+    height: 14px;
+    margin-right: 3px;
+    position: relative;
+    bottom: -1.5px;
+
 }

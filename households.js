@@ -326,6 +326,8 @@ function keyPressed(){
 /* race stats */
 
 function updateRacesInfo(){
+
+    let v = '<span class="v-mark"></span>'
     selectAll(".race-info").forEach( (e) => e.remove());
     let keys = Object.keys(stats[YEAR]);
     keys.sort( (a, b) => stats[YEAR][a] - stats[YEAR][b]);
@@ -334,11 +336,14 @@ function updateRacesInfo(){
     for(let rr of keys){
         let info = createDiv().parent(papi).class("race-info");
         let name = unwrap(rr);
-        let no = nfs(stats[YEAR][rr]/total * 100, 1, 2)+"%";
-        info.html(name + "<br/>" + no);
+        let no = nfs(stats[YEAR][rr]/total * 100, 1, 2).trim()+"%";
+        let no_html = `<span style="color: #888">${no}</span>`;
+        info.html(name + "<br/>" + v + no_html);
     }
     function unwrap([...XX]){
-        return equiv(XX[0]) + "<br/>" + equiv(XX[1]);
+        let v1 = `<span class="v-mark" style="background-color: ${color(XX[0])}"></span>`
+        let v2 = `<span class="v-mark" style="background-color: ${color(XX[1])}"></span>`
+        return v1 + equiv(XX[0]) + "<br/>" + v2 + equiv(XX[1]);
 
         function equiv(X){
             switch(X){
@@ -350,6 +355,32 @@ function updateRacesInfo(){
                 default: return X;
             }
         }
+
+        function color(C){
+            let c;
+            switch (C) {
+                case "W": //white
+                    c = c_yellow;
+                    break;
+                case "B": //black
+                    c = c_red;
+                    break;
+                case "N": //native
+                    c = c_green;
+                    break;
+                case "A": //asian
+                    c = c_violet;
+                    break;
+                case "+": //many or nec
+                    c = c_blue;
+                    break;
+                default:
+                    c = 0;
+            }
+            return c;
+
+        }
+
 
     }
 }

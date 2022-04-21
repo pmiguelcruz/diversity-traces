@@ -10,7 +10,7 @@ let metadata;
 let families = []; //selected family array
 let data; //selected json
 
-let YEAR = 1860;
+let YEAR = 2020;
 const YEARS = ["1860", "1880", "1900", "1920", "1940", "1960", "1980", "2000", "2020"];
 let DISPLAY_SERIAL = false;
 

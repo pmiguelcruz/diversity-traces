@@ -11,7 +11,7 @@ body {
     width: 1350px;
     margin: auto;
     margin-bottom: 200px;
-    margin-top: 100px;
+    margin-top: 300px;
     text-align: left;
     margin-left: 300px;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 #main-title{
-    font-size: 32pt;
+    font-size: 48pt;
     font-weight: 800;
     color: #666666;
     margin-bottom: 0;
@@ -31,10 +31,18 @@ body {
 
 
 #sub-title{
-    font-size: 18pt;
+    font-size: 24pt;
     font-weight: 200;
     color: #666666;
     margin-top: 0;
+    margin-bottom: 200px;
+}
+
+#sub-title span{
+    font-size: 19pt;
+    font-weight: 300;
+    color: #6f6f6f;
+
 }
 
 #title-years{
@@ -45,9 +53,9 @@ body {
 
 #legend{
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
     position: relative;
-    left: -70px;
+    left: -60px;
 }
 
 #big-percentage {

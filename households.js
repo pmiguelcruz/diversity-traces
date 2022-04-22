@@ -53,8 +53,8 @@ function preload() {
     metadata = loadTable('data/counts.csv', 'csv', 'header');
     fontBold = loadFont("fonts/Nunito-Black.ttf");
     fontRegular = loadFont("fonts/Nunito-Regular.ttf");
-    imgF = loadImage("images/F.svg");
-    imgM = loadImage("images/M.svg");
+    imgF = loadImage("images/F.png");
+    imgM = loadImage("images/M.png");
     imgPride = loadImage("images/pride2.png");
 
     YEARS.forEach((yy) => { datas[yy] = loadJSON(`data/couples_${yy}_web.json`, function(){
@@ -205,7 +205,7 @@ function lensSketch(p) {
     }
 
     p.drawZoom = function () {
-
+        
         let x = mouseX - mouseX % hSpacing;
         if (mouseX < hSpacing) x = hSpacing;
         if (mouseX > lens_width - 2 * hSpacing) x = lens_width - 2 * hSpacing;

@@ -177,10 +177,14 @@ class Family {
     /* le sex */
     p.noStroke();
     let img = this.p1.getSexString() == "M" ? imgM : imgF;
-    p.image(img, 0, 1.75, imgF.width / 30, imgF.height / 30);
+    //print("1 "+imgF.width / 30 + " " + imgF.height / 30);
+    //print(img);
+    p.image(imgM, 0, 1.75, 0.5, 0.66667);
     img = this.p2.getSexString() == "M" ? imgM : imgF;
-    p.image(img, 1, 1.75, imgF.width / 30, imgF.height / 30);
+    //print("2 "+imgF.width / 30 + " " + imgF.height / 30);
+    p.image(img, 1, 1.75, 0.5, 0.66667);
 
+    
     /* the ages */
     p.textFont(fontRegular);
     p.fill(100);

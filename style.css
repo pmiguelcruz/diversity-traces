@@ -1,5 +1,4 @@
 body {
-
     background-color: white;
     text-align: center;
     font-family: 'Nunito', serif;
@@ -73,7 +72,7 @@ body {
     line-height: 1.5em;
 }
 
-#big-statistics span {
+#big-statistics .b-stats {
     font-weight: 400;
 }
 
@@ -116,6 +115,8 @@ body {
 
 #footer {
     height: 500px;
+    margin-top: 100px;
+    text-align: left;
 }
 
 .button-years {
@@ -139,6 +140,26 @@ body {
 .button-years.selected {
     background-color: #4D4D4D;
     color: #F2F2F2;
+}
+
+.button-info{
+    background-color: #E6E6E6;
+    color: #999999;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 16pt;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.button-info:hover {
+    color: black;
+    font-weight: 900;
 }
 
 #loading {

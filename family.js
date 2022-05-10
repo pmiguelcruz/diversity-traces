@@ -179,7 +179,7 @@ class Family {
     let img = this.p1.getSexString() == "M" ? imgM : imgF;
     //print("1 "+imgF.width / 30 + " " + imgF.height / 30);
     //print(img);
-    p.image(imgM, 0, 1.75, 0.5, 0.66667);
+    p.image(img, 0, 1.75, 0.5, 0.66667);
     img = this.p2.getSexString() == "M" ? imgM : imgF;
     //print("2 "+imgF.width / 30 + " " + imgF.height / 30);
     p.image(img, 1, 1.75, 0.5, 0.66667);
@@ -192,6 +192,8 @@ class Family {
     p.textSize(0.6);
     p.text(this.p1.getAgeRaw(), 0, 3);
     p.text(this.p2.getAgeRaw(), 1, 3);
+    //p.text(this.p1.getSexString(), 0, 3);
+    //p.text(this.p2.getSexString(), 1, 3);
     p.pop();
 
     p.pop();

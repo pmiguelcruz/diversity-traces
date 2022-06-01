@@ -244,9 +244,16 @@ function lensSketch(p) {
             p.strokeWeight(4);
 
             /* races label */
-            p.fill(100);
-            p.textLeading(11);
-            p.text(mf.getRaceLabel() , lens_width / 2 - 20, 15);
+            //p.fill(100);
+            //p.textLeading(11);
+           // p.text(mf.getRaceLabel() , lens_width / 2 - 20, 15);
+
+            p.fill(mf.p1.getColor());
+            p.text(mf.p1.getRaceFullString(), lens_width / 2 - 20, 15);
+            p.fill(mf.p2.getColor());
+            p.text(mf.p2.getRaceFullString(), lens_width / 2 - 20, 26);    
+
+
 
             /* kids */
             p.textAlign(LEFT);
@@ -279,10 +286,10 @@ function lensSketch(p) {
 
         /* bottom and top bars */
         p.rectMode(CENTER);
-        p.fill(50);
+        p.fill(100);
         p.noStroke();
-        p.rect(lens_width / 2, 30, 40, 3, 2, 2);
-        p.rect(lens_width / 2, lens_height - 4, 40, 3, 2, 2);
+        p.rect(lens_width / 2, 30, 40, 2, 2, 2);
+        p.rect(lens_width / 2, lens_height - 4, 40, 2, 2, 2);
     }
 
 }
@@ -350,7 +357,7 @@ function updateRacesInfo(){
                 case "W": return "White"
                 case "N": return "Native"
                 case "B": return "Black"
-                case "+": return "Mult."
+                case "+": return "Multiple"
                 case "A": return "Asian";
                 default: return X;
             }

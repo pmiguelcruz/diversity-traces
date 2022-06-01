@@ -10,7 +10,7 @@ body {
     width: 1350px;
     margin: auto;
     margin-bottom: 200px;
-    margin-top: 300px;
+    margin-top: 100px;
     text-align: left;
     margin-left: 300px;
 }
@@ -34,15 +34,24 @@ body {
     font-weight: 200;
     color: #666666;
     margin-top: 0;
-    margin-bottom: 200px;
+    margin-bottom: 60px;
 }
 
 #sub-title span{
     font-size: 19pt;
     font-weight: 300;
     color: #6f6f6f;
-
 }
+
+#desc-1, #desc-2{
+    width: 50%;
+    font-weight: 300;
+    font-size: 14pt;
+    line-height: 1.5em;
+    color: #555;
+}
+
+
 
 #title-years{
     font-size: 14pt;
@@ -51,8 +60,8 @@ body {
 }
 
 #legend{
-    margin-top: 50px;
-    margin-bottom: 200px;
+    margin-top: 60px;
+    margin-bottom: 0px;
     position: relative;
     left: -60px;
 }
@@ -62,6 +71,7 @@ body {
     font-weight: 800;
     color: #666666;
     line-height: 1.3em;
+    margin-top: 180px;
 }
 
 #big-statistics {

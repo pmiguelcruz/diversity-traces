@@ -88,7 +88,7 @@ class Person {
             case 5:
                 return "HISPAN."
             case 7:
-                return "MULT.";
+                return "MULTIPLE";
         }
         return "";
     }

@@ -10,7 +10,7 @@ body {
     width: 1350px;
     margin: auto;
     margin-bottom: 200px;
-    margin-top: 100px;
+    margin-top: 180px;
     text-align: left;
     margin-left: 300px;
 }
@@ -45,10 +45,10 @@ body {
 
 #desc-1, #desc-2{
     width: 50%;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 14pt;
     line-height: 1.5em;
-    color: #555;
+    color: #444;
 }
 
 

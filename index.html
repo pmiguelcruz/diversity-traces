@@ -2,7 +2,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:i,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
     <script src="person.js"></script>
@@ -15,34 +16,35 @@
 <body>
     <div id="header">
         <p id="main-title">diversity traces</p>
-        <p id="sub-title">an interactive lens on multi-racial</br>  families in America · 
+        <p id="sub-title">an interactive lens on multi-racial</br> families in the United States ·
             <span>1860-2020</span>
         </p>
         <!--<p id="title-years">2020-1860</p>-->
         <p id="desc-1">
-            When looking at diversity from a racial perspective, homogenous communities are still the norm, 
-            as they remain siloed not only locally, but in their very own households as well. 
-            This visualization project comes as a celebration of the fringe couples 
-            and families who have a multi-racial identity, effectively embodying the intermingle of races, 
-            and dissolving the systemic barriers put on their very own existence. 
-            According to the census, there are only vestiges of these multi-racial families from 1860 to 1980. 
-            More recently, there as been a surge of these families in the data, 
-            but they are still a rarity, still mere traces of diversity in America.           
+            When looking at diversity from a racial perspective, homogenous communities are still the norm,
+            as they remain siloed not only locally, but in their very own households as well.
+            This visualization project comes as a celebration of the fringe couples
+            and families who have a multi-racial identity, effectively embodying the intermingle of races,
+            and dissolving the systemic barriers put on their very own existence.
+            According to the census, there are only vestiges of these multi-racial families from 1860 to 1980.
+            More recently, there as been a surge of these families in the data,
+            but they are still a rarity, still mere traces of diversity in America.
         </p>
         <!---->
-       
 
-        <img id="legend" width="270px" src="images/legend.svg"/>
+
+        <img id="legend" width="270px" src="images/legend.svg" />
         <p id="desc-2">
-            In this visualization you can see every registered multi-racial couple in America, 
-            for recent periods in 1-5% samples of the population, 
-            and for older periods in 100% samples of the population. 
-            Each couple is represented as a colorful chromosome, enabling you to see the races within each family, 
-            their ages, sexes, and children. For each year, these couples are organized by rarest multi-racial group first, 
-            by ascending average age of the couple, and by number of children. 
-            This means that in each group you will first see couples with no children, 
-            but as you navigate towards the end a group, you will see couples with more children. 
-            Only in recent years you will be able to see same-sex couples. In addition to race, 
+            In this visualization you can see every registered multi-racial couple in America,
+            for recent periods in 1-5% samples of the population,
+            and for older periods in 100% samples of the population.
+            Each couple is represented as a colorful chromosome, enabling you to see the races within each family,
+            their ages, sexes, and children. For each year, these couples are organized by rarest multi-racial group
+            first,
+            by ascending average age of the couple, and by number of children.
+            This means that in each group you will first see couples with no children,
+            but as you navigate towards the end a group, you will see couples with more children.
+            Only in recent years you will be able to see same-sex couples. In addition to race,
             individuals who identify themselves as latino/as are also marked with an L.
 
         </p>
@@ -50,8 +52,8 @@
         <p id="big-percentage"><span id="meta-percentage">percentage</span> of couples in<br />
             the United States<br />
             are multi-racial</p>
-            
-        
+
+
 
         <div id="button-holder">
             <span class="button-years selected" id="y2020">2020</span>
@@ -69,16 +71,17 @@
 
         <p id="big-statistics">visualizing <span class="b-stats" id="meta-num1">xxxx</span> multi-racial couples<br />
             out of a total of <span class="b-stats" id="meta-num2">XXXXXXX</span> couples<br />
-            in a <span class="b-stats" id="meta-sample">XX</span> sample of the U.S. population 
-            <a href="#footer" class="button-info">+info</a></p>
+            in a <span class="b-stats" id="meta-sample">XX</span> sample of the U.S. population
+            <a href="#footer" class="button-info">+info</a>
+        </p>
 
-       
+
     </div>
 
     <div id="races-holder">
-  
+
     </div>
-   
+
 
     <div id="holder">
         <div id="lens"></div>
@@ -90,6 +93,168 @@
         </div>
         <div id="footer">
             <!--+info-->
+            <div class="column left">
+                <p>Project by <b><a href="https://camd.northeastern.edu/faculty/pedro-m-cruz/">Pedro M. Cruz</a></b> at
+                    the <a
+                        href="https://camd.northeastern.edu/research-scholarship-creative-practice/co-laboratory-for-data-impact/">Co-Lab
+                        for Data Impact</a> and the
+                    <a href="https://camd.northeastern.edu/center-for-design/">Center for Design</a> at Northeastern
+                    University.
+                    This project was funded by a <a href="https://www.nationalgeographic.org/society/">National
+                        Geographic Explorer Grant</a>
+                    for “Visualizing the Evolution of Household Diversity in America.”
+                </p>
+
+                <p><i>Contributors</i><br />
+                    <b>John Wihbey</b> @ Co-Lab for Data Impact, Associate Professor, School of Journalism, Northeastern
+                    University<br />
+                    <b>Kathleen Foley</b>, visual identity and typography<br />
+                    <b>Leah Welch</b>, functional prototyping and ideation<br />
+                    <b>Ryan Morrill</b>, research, ideation, and visual prototyping<br />
+                    <b>Arushi Singh</b>, data frameworks and statistics<br />
+                    <b>Eunice Esomonu</b>, data querying<br />
+                    <b>Yuqing Liu</b>, research and visual prototyping<br />
+                    <b>Anuj Golesar</b>, database setup and statistics<br />
+                    <b>Dishali Sonawane</b>, database setup and statistics<br />
+                </p>
+
+
+            </div>
+
+            <div class="column right">
+                <p><b>Technicalities</b></p>
+                <p>This project uses the <a href="https://github.com/googlefonts/nunito">Nunito</a> 
+                    typeface served by <a href="https://fonts.google.com/specimen/Nunito">Google Fonts</a>,
+                    and is hosted by <a href="https://github.com/pmiguelcruz/diversity-traces">GitHub</a>.
+                    Coded in pure Javascript and <a href="https://p5js.org">p5.js</a>.
+                </p>
+                <p>
+                    The application uses two canvas elements: one that is updated when a year is selected to
+                    render all the families,and a second one that is redrawn according to the
+                    mouse position in order to render a zoomed in version of the hovered families.
+                    In order to avoid computing distances from the mouse pointer to every other family,
+                    an hash map of families and coordinates is kept in memory, enabling to match mouse coordinates
+                    with any other families just by rounding integers.
+                    The chromosomes are drawn using the built-in Rom-Catmull splines in p5.js,
+                    then rendered with a thick stroke and rounded joints.
+                    The motion of the chromosomes was created by shifting horizontally
+                    the middle coordinate of each of the arms using the Perlin noise function.
+                    The ages correspond to height, not linearly, but by a square root instead:
+                    making the height of each chromosome correspond to the age of the spouses creates a wide variation
+                    of heights
+                    making it hard to condense so much information in a constrained space.</p>
+
+                <p>The micro-census data utilized for this project were obtained from the USA IPUMS database 
+                    (IPUMS USA, University of Minnesota, <a href="https://usa.ipums.org/usa/">www.ipums.org</a>).
+                    Nine sampled years were utilized:</p>
+                    <table>
+                        <tr>
+                            <th>Year</th>
+                            <th>Sample size</th>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>1%</td>
+                        </tr>
+                        <tr>
+                            <td>2000</td>
+                            <td>1%</td>
+                        </tr>
+                        <tr>
+                            <td>1980</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>1960</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>1940</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>1920</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>1900</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>1880</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>1860</td>
+                            <td>100%</td>
+                        </tr>
+                    </table>
+
+                <p>The data from IPUMS is anonymized.
+                    For each sample, the following variables were extracted from IPUMS in a rectangular format:</p>
+
+                <table>
+                    <tr>
+                        <th>Variable</th>
+                        <th>Label</th>
+                    </tr>
+                    <tr>
+                        <td>YEAR</td>
+                        <td>Census year</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>IPUMS sample identifier</td>
+                    </tr>
+                    <tr>
+                        <td>SERIAL</td>
+                        <td>Household serial number</td>
+                    </tr>
+                    <tr>
+                        <td>HHWT</td>
+                        <td>Household weight</td>
+                    </tr>
+                    <tr>
+                        <td>PERNUM</td>
+                        <td>Person number in sample unit</td>
+                    </tr>
+                    <tr>
+                        <td>SPLOC</td>
+                        <td>Spouse's location in household</td>
+                    </tr>
+                    <tr>
+                        <td>RELATE</td>
+                        <td>Relationship to household head</td>
+                    </tr>
+                    <tr>
+                        <td>SEX</td>
+                        <td>Sex</td>
+                    </tr>
+                    <tr>
+                        <td>AGE</td>
+                        <td>Age</td>
+                    </tr>
+                    <tr>
+                        <td>RACE</td>
+                        <td>Race</td>
+                    </tr>
+                    <tr>
+                        <td>HISPAN</td>
+                        <td>Hispanic origin</td>
+                    </tr>
+                </table>
+
+                <p>Each sample was then inserted as a document of persons in a <a href="https://www.mongodb.com">MongoDB</a> database.
+                    The database's engine was then used to detect households and extract nuclear families from within
+                    those households and store them with as hierarchical objects:
+                    each family is comprised of two parents and has list of children.
+                    The results of the data processing were exported as static JSON files which are loaded
+                    by the browser and used to render the visualization.</p>
+
+                
+
+            </div>
+
         </div>
     </div>
 

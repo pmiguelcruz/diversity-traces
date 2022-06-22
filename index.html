@@ -250,8 +250,8 @@
                 </table>
 
                 <p>Each sample was then inserted as a document of persons in a <a href="https://www.mongodb.com">MongoDB</a> database.
-                    The database's engine was then used to detect households and extract nuclear families from within
-                    those households and store them with as hierarchical objects:
+                    The database's engine was then used to parse households, extract nuclear families from within
+                    those households, detect multi-racial families, and store them with as hierarchical objects:
                     each family is comprised of two parents and has list of children.
                     The results of the data processing were exported as static JSON files which are loaded
                     by the browser and used to render the visualization.</p>

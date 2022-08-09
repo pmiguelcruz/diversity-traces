@@ -158,6 +158,21 @@ class Family {
     p.textSize(0.8);
     p.noStroke();
 
+    /* the gay flag */
+    if(this.p1.getSexString() == this.p2.getSexString()){
+      p.noStroke();
+      p.noFill();
+      //p.rectMode(CENTER);
+      p.image(imgPride, 0.625, 0.75, 4, 1);
+      /*p.strokeWeight(0.2);
+      p.stroke(255);
+      p.noFill();
+      p.rect(0.625, 0.75, 4.25, 1.25, 0.5);
+      p.rectMode(CORNER);*/
+      //p.rectMode(CORNER);
+      
+    }
+
     /* the races */
     p.textAlign(CENTER);
     p.strokeWeight(0.2);
@@ -167,12 +182,7 @@ class Family {
     p.fill(this.p2.getColor());
     p.text(this.p2.getRaceString(), 1, 1);
     
-    /* the gay flag */
-    if(this.p1.getSexString() == this.p2.getSexString()){
-      p.stroke(0);
-      p.image(imgPride, 0.5, 3.25, 0.7, 0.25);
-      
-    }
+    
 
     /* le sex */
     p.noStroke();
